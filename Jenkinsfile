@@ -1,11 +1,6 @@
 pipeline {
 	agent any
 	stages {
-		stage('Clonage') {
-			steps {
-			git 'https://github.com/Abounaimmanal/mon_projet.git'
-			}
-		}
 		stage('Build + Tests + Sécurité') {
 			steps {
 				sh '''
